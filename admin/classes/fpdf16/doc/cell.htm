@@ -1,0 +1,106 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>Cell</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="fpdf.css">
+</HEAD>
+<BODY>
+<H2>Cell</H2>
+<TT>Cell(<B>float</B> w [, <B>float</B> h [, <B>string</B> txt [, <B>mixed</B> border [, <B>int</B> ln [, <B>string</B> align [, <B>int</B> fill [, <B>mixed</B> link]]]]]]])</TT>
+<H4 CLASS='st'>Versiune</H4>
+1.0
+<H4 CLASS='st'>Descriere</H4>
+Tipareste o celula (zona dreptunghiulara), optional cu contur, culoare fundal si sir de
+caractere. Coltul stanga-sus al celulei corespunde cu pozitia curenta. Textul poate fi aliniat
+sau centrat. Dupa apel, pozitia curenta se muta la dreapta sau la o linie noua. Este posibil
+setarea unui link pentru text.
+<BR>
+Daca break-ul de pagina automat este setat si celula depaseste limita, este introdus un
+page-break inaintea tiparirii celulei.
+<H4 CLASS='st'>Parametrii</H4>
+<TT><U>w</U></TT>
+<BLOCKQUOTE>
+Latimea celulei. Daca este <TT>0</TT>, celula se va extinde pana la marginea dreapta.
+</BLOCKQUOTE>
+<TT><U>h</U></TT>
+<BLOCKQUOTE>
+Inaltimea celulei.
+Valoare implicita: <TT>0</TT>.
+</BLOCKQUOTE>
+<TT><U>txt</U></TT>
+<BLOCKQUOTE>
+Text de afisat.
+Valoare implicita: "".
+</BLOCKQUOTE>
+<TT><U>border</U></TT>
+<BLOCKQUOTE>
+Indica daca trebuie desenat contur in jurul celulei. Valoarea poate fi un numar:
+<UL>
+<LI><TT>0</TT>: fara contur
+<LI><TT>1</TT>: cu contur
+</UL>
+sau un sir de caractere continand unele sau toate caracterele urmatoare (indiferent de ordine):
+<UL>
+<LI><TT>L</TT>: stanga
+<LI><TT>T</TT>: sus
+<LI><TT>R</TT>: dreapta
+<LI><TT>B</TT>: jos
+</UL>
+Valoare implicita: <TT>0</TT>.
+</BLOCKQUOTE>
+<TT><U>ln</U></TT>
+<BLOCKQUOTE>
+Indica unde sa fie mutata pozitia curenta dupa apel. Valori posibile:
+<UL>
+<LI><TT>0</TT>: la dreapta
+<LI><TT>1</TT>: la inceputul urmatoarei linii
+<LI><TT>2</TT>: dedesubt
+</UL>
+Setand <TT>1</TT> este echivalent cu <TT>0</TT> urmat de Ln() imediat dupa.
+Valoare implicita: <TT>0</TT>.
+</BLOCKQUOTE>
+<TT><U>align</U></TT>
+<BLOCKQUOTE>
+Da posibilitatea centrarii sau alinierii textului. Valori posibile:
+<UL>
+<LI><TT>L</TT> sau sir gol: aliniere stanga (valoare implicita)
+<LI><TT>C</TT>: centrat
+<LI><TT>R</TT>: aliniere dreapta
+</UL>
+</BLOCKQUOTE>
+<TT><U>fill</U></TT>
+<BLOCKQUOTE>
+Indica daca fundalul celului trebuie sa fie colorat  (<TT>1</TT>) sau transparent (<TT>0</TT>).
+Valoare implicita: <TT>0</TT>.
+</BLOCKQUOTE>
+<TT><U>link</U></TT>
+<BLOCKQUOTE>
+URL sau identificator returnat de AddLink().
+</BLOCKQUOTE>
+<H4 CLASS='st'>Exemplu</H4>
+<TABLE WIDTH="100%" BGCOLOR="#E0E0E0"><TR><TD>
+<TT>
+//Set font<BR>
+$pdf-&gt;SetFont('Arial','B',16);<BR>
+//Move to 8 cm to the right<BR>
+$pdf-&gt;Cell(80);<BR>
+//Centered text in a framed 20*10 mm cell and line break<BR>
+$pdf-&gt;Cell(20,10,'Title',1,1,'C');
+</TT>
+</TD></TR></TABLE><BR>
+<H4 CLASS='st'>Vezi</H4>
+<A HREF="setfont.htm">SetFont()</A>,
+<A HREF="setdrawcolor.htm">SetDrawColor()</A>,
+<A HREF="setfillcolor.htm">SetFillColor()</A>,
+<A HREF="settextcolor.htm">SetTextColor()</A>,
+<A HREF="setlinewidth.htm">SetLineWidth()</A>,
+<A HREF="addlink.htm">AddLink()</A>,
+<A HREF="ln.htm">Ln()</A>,
+<A HREF="multicell.htm">MultiCell()</A>,
+<A HREF="write.htm">Write()</A>,
+<A HREF="setautopagebreak.htm">SetAutoPageBreak()</A>.
+<H6></H6>
+<HR>
+<DIV ALIGN="CENTER"><A HREF="index.htm">Index</A></DIV>
+</BODY>
+</HTML>

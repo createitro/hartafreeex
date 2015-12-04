@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AddNoise.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="ApplyConvolution.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="ApplyFilter.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="ApplyMask.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="AsGrayscale.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="AsNegative.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="AutoCrop.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="CopyChannelsPalette.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="CopyChannelsTrueColor.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="CorrectGamma.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Crop.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Flip.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="GetMask.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Merge.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Mirror.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Resize.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="ResizeCanvas.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Rotate.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="RoundCorners.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="Unsharp.php" server="www.birtas.ro/public_html/" local="129425865420000000" remote="130694542800000000" Dst="1" />
+<file name="ApplyFilter.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="ApplyConvolution.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="AddNoise.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="ApplyMask.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="AsGrayscale.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="AsNegative.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="AutoCrop.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="CopyChannelsPalette.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="CopyChannelsTrueColor.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="CorrectGamma.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Crop.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Flip.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="GetMask.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Merge.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Mirror.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Resize.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="ResizeCanvas.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Rotate.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="RoundCorners.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+<file name="Unsharp.php" server="freeex.activewatch.ro" local="129425865420000000" remote="130717801200000000" Dst="1" />
+</dwsync>

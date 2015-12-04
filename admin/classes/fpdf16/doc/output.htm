@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>Output</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="fpdf.css">
+</HEAD>
+<BODY>
+<H2>Output</H2>
+<TT><B>string</B> Output([<B>string</B> name [, <B>string</B> dest]])</TT>
+<H4 CLASS='st'>Versiune</H4>
+1.0
+<H4 CLASS='st'>Descriere</H4>
+Trimite documentul la o destinatie specificata: text, fisier local sau browser. In ultimul caz,
+plugin-ul poate fi folosit (daca este instalat) sau un download poate fi impus.
+<BR>
+Metoda apeleaza initial Close() daca este necesar pentru a termina documentul.
+<H4 CLASS='st'>Parametrii</H4>
+<TT><U>name</U></TT>
+<BLOCKQUOTE>
+Numele fisierului. Daca nu este specificat, documentul va fi trimis spre browser
+(destinatie <TT>I</TT>) cu numele <TT>doc.pdf</TT>.
+</BLOCKQUOTE>
+<TT><U>dest</U></TT>
+<BLOCKQUOTE>
+Destinatia documentului. Valori posibile:
+<UL>
+<LI><TT>I</TT>: trimite fisierul spre browser. Plugin-ul este folosit daca este prezent.
+Numele dat de <TT>name</TT> este folosit daca se foloseste optiunea "Save as" pe linkul generat
+de PDF in browser.
+<LI><TT>D</TT>: trimite fisierul spre browser si forteaza download-ul fisierului <TT>name</TT>.
+<LI><TT>F</TT>: salveaza intr-un fisier local sub numele <TT>name</TT>.
+<LI><TT>S</TT>: returneaza documentul ca un string. <TT>name</TT> este ignorat.
+</UL>
+Daca parametrul nu este specificat, dar este specificat un nume, destinatia este <TT>F</TT>. Daca
+nu este specificat nici un parametru, destinata este <TT>I</TT>.<BR>
+<BR>
+Nota: pentru compatibilitate cu versiuni anterioare, o valoare boolean este de asemenea acceptata.
+(<TT>false</TT> pentru <TT>F</TT> si <TT>true</TT> pentru <TT>D</TT>).
+</BLOCKQUOTE>
+<H4 CLASS='st'>Vezi</H4>
+<A HREF="close.htm">Close()</A>.
+<H6></H6>
+<HR>
+<DIV ALIGN="CENTER"><A HREF="index.htm">Index</A></DIV>
+</BODY>
+</HTML>

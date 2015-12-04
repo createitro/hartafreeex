@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>AddPage</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="fpdf.css">
+</HEAD>
+<BODY>
+<H2>AddPage</H2>
+<TT>AddPage([<B>string</B> orientation])</TT>
+<H4 CLASS='st'>Versiune</H4>
+1.0
+<H4 CLASS='st'>Descriere</H4>
+Adauga o pagina noua documentului. Daca o pagina este deja prezenta, metoda Footer() este
+apelata initial pentru a afisa nota de pagina. Pe urma pagina este adaugata, pozitia curenta
+setata in coltul stanga-sus corespunzator cu marginile sus si stanga, si metoda Header() este
+apelata pentru a afisa antetul.
+<BR>
+Fontul care era setat inaintea apelului este restaurat automat. Nu este necesar reapelul lui
+SetFont() daca doriti sa continuati cu acelasi font. Acelasi lucru este valabil si pentru
+culori si latimea liniei.
+<BR>
+Originea sistemului de coordinate este in coltul stanga-sus si creste in jos.
+<H4 CLASS='st'>Parametrii</H4>
+<TT><U>orientation</U></TT>
+<BLOCKQUOTE>
+Orientarea paginii. Valori posibile:
+<UL>
+<LI><TT>P</TT> sau <TT>Portrait</TT>
+<LI><TT>L</TT> sau <TT>Landscape</TT>
+</UL>
+Valoare implicita este cea pasata constructorului.
+</BLOCKQUOTE>
+<H4 CLASS='st'>Vezi</H4>
+<A HREF="fpdf.htm">FPDF()</A>,
+<A HREF="header.htm">Header()</A>,
+<A HREF="footer.htm">Footer()</A>,
+<A HREF="setmargins.htm">SetMargins()</A>.
+<H6></H6>
+<HR>
+<DIV ALIGN="CENTER"><A HREF="index.htm">Index</A></DIV>
+</BODY>
+</HTML>

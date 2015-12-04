@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SetDisplayMode</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="fpdf.css">
+</HEAD>
+<BODY>
+<H2>SetDisplayMode</H2>
+<TT>SetDisplayMode(<B>mixed</B> zoom [, <B>string</B> layout])</TT>
+<H4 CLASS='st'>Versiune</H4>
+1.2
+<H4 CLASS='st'>Descriere</H4>
+Defineste modul in care documentul este afisat de catre Viewer. Nivelul de zoom poate fi setat: paginile
+pot fi afisate complet pe ecran, pot sa ocupe intreaga latime a ferestrei, pot avea dimensiunea reala,
+pot fi scalate cu un factor de zoom sau cel implicit Viewer-ului. De asemenea si aspectul poate fi
+specificat: singular, continuu, 2 coloane sau definit de Viewer.
+<BR>
+Implicit, documentul foloseste intreaga latime continuu.
+<H4 CLASS='st'>Parametrii</H4>
+<TT><U>zoom</U></TT>
+<BLOCKQUOTE>
+Factorul de zoom. Valori posibile:
+<UL>
+<LI><TT>fullpage</TT>: intreaga pagina pe ecran
+<LI><TT>fullwidth</TT>: intreaga latime a ferestrei
+<LI><TT>real</TT>: marime reala (echivalent cu zoom 100%)
+<LI><TT>default</TT>: specific Viewer-ului
+</UL>
+sau un numar indicand procentul de zoom.
+</BLOCKQUOTE>
+<TT><U>layout</U></TT>
+<BLOCKQUOTE>
+Aspectul paginii. Valori posibile:
+<UL>
+<LI><TT>single</TT>: o singura pagina odata
+<LI><TT>continuous</TT>: pagini continue
+<LI><TT>two</TT>: 2 pagini pe 2 coloane
+<LI><TT>default</TT>: specific Viewer-ului
+</UL>
+Valoare implicita: <TT>continuous</TT>.
+</BLOCKQUOTE>
+<H6></H6>
+<HR>
+<DIV ALIGN="CENTER"><A HREF="index.htm">Index</A></DIV>
+</BODY>
+</HTML>

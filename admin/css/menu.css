@@ -1,0 +1,134 @@
+	/* 
+	General styles for this example page */
+	
+	
+	#ancs_menu img{
+		border:1px;
+	}
+
+	/* End general styles for this example page */
+	/* General configuration CSS */
+	
+	#ancs_menu ul li ul{
+		display:none;	/* Needed to display ok in Opera */
+	}
+
+	#ancs_menu{
+		visibility:hidden;	
+	}
+	#ancs_menu ul{
+		margin:0px;	/* No indent */
+		padding:0px;	/* No indent */
+	}
+	#ancs_menu a{
+	}
+	/* End general configuration CSS */
+
+	
+	/* Cosmetic */
+
+	/***********************************************************************
+		CSS - MENU BLOCKS
+	 	General rules for all menu blocks (group of sub items) 
+	***********************************************************************/
+	#ancs_menu ul{
+		border:0px solid #000;
+		background-color:#FFF;
+		padding:0px;
+	}
+		
+	#ancs_menu ul.menuBlock1{	/* Menu bar - main menu items */
+		background-color:#7b99c9;
+		overflow:visible;
+	}
+	#ancs_menu ul.menuBlock2{	/* Menu bar - main menu items */
+		background-color:#FFF;
+		border-left:1px solid #000;
+		border-right:1px solid #000;
+		border-bottom:1px solid #000;
+		-moz-border-radius-bottomleft:4px;
+		-moz-border-radius-bottomright:4px;	
+		-moz-box-shadow:0 0px 10px rgba(0, 0, 0, 0.3);
+		min-width:200px;
+	}
+	
+	/***********************************************************************
+		CSS - MENU ITEMS
+	 	Here, you could assign rules to the menu items at different depths.
+	***********************************************************************/
+	/* General rules for all menu items */
+	#ancs_menu a{
+		color: #716f6e;
+		text-decoration:none;
+		font-weight:bold;
+		padding:0px;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	}
+	
+	/* 	Main menu items */	
+	#ancs_menu .currentDepth1{
+		padding: 5px 20px;
+		border-top:1px solid #7b99c9;
+		border-right:1px solid #7b99c9;
+		border-left:1px solid #7b99c9;
+		border-bottom:0px;		
+	}
+	#ancs_menu .currentDepth1over{
+		padding: 5px 20px;
+		border-top:1px solid #000;
+		border-right:1px solid #000;
+		border-left:1px solid #000;
+		border-bottom:0px;				
+		background-color:#FFF;		
+	}
+	#ancs_menu .currentDepth1 a{
+		font-weight:bold;
+		font-size:14px;
+        color: #FFF; 
+	}
+	#ancs_menu .currentDepth1over a{	/* Text rules */
+		color:#000;
+		font-weight:bold;
+		font-size:14px;
+	}
+	
+	/* Sub menu depth 1 */
+	#ancs_menu .currentDepth2{
+		padding:1px 7px;
+	}
+	#ancs_menu .currentDepth2 a{
+		color:#000;
+		font-weight:normal;
+		text-decoration:none;
+		font-size:12px;		
+	}	
+	#ancs_menu .currentDepth2over{
+		padding:1px 7px;
+		background-color:#7b99c9;
+	}	
+	#ancs_menu .currentDepth2over a{	/* Text rules */
+		color:#FFF;
+		font-weight:normal;
+		text-decoration:none;
+		font-size:12px;
+	}	
+	/* Sub menu depth 2 */
+	#ancs_menu .currentDepth3{
+		padding:0px;
+		border:0px solid #FFF;
+	}
+	#ancs_menu .currentDepth3over{
+		padding-right:0px;
+		background-color:#EDE3EB;
+		border:0px solid #000;
+	}
+	/* Sub menu depth 3 */
+	#ancs_menu .currentDepth4{
+		padding-right:0px;
+		border:0px solid #FFF;
+	}
+	#ancs_menu .currentDepth4over{
+		padding-right:0px;
+		background-color:#EBEDE3;
+		border:0px solid #000;
+	}	

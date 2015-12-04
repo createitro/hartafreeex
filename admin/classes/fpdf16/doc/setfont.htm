@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<TITLE>SetFont</TITLE>
+<LINK TYPE="text/css" REL="stylesheet" HREF="fpdf.css">
+</HEAD>
+<BODY>
+<H2>SetFont</H2>
+<TT>SetFont(<B>string</B> family [, <B>string</B> style [, <B>float</B> size]])</TT>
+<H4 CLASS='st'>Versiune</H4>
+1.0
+<H4 CLASS='st'>Descriere</H4>
+Seteaza fontul folosit pentru a tipari caractere. Este obligatoriu apelul acestei metode
+cel putin odata inainte de tiparirea textului, sau documentul va fi invalid.
+<BR>
+Fontul poate fi unul standard sau un font adaugat cu AddFont(). Fonturile standard folosesc
+codificarea cp1252 (Western Europe).
+<BR>
+Metoda poate fi apelata inainte de crearea primei pagini si fontul este retinut de la o pagina
+la alta.
+<BR>
+Daca doriti sa schimbati doar marimea fontului, este mai simplu sa apelati doar SetFontSize().
+<BR>
+<BR>
+<B>Nota: </B>pentru fonturile standard, fisierele metrice corespunzatoare trebuie sa fie acceibile.
+Sunt 3 posibilitati pentru asta:
+<BR>
+<BR>
+<UL>
+<LI>Sunt in directorul curent (acelasi cu scriptul)
+<BR>
+<LI>Sunt intr-unul din directoarele specificate in parametrul <TT>include_path</TT>
+<BR>
+<LI>Sunt in directorul specificat de constanta <TT>FPDF_FONTPATH</TT>
+</UL>
+Exemplu pentru ultimul caz:
+<BR>
+<BR>
+<TABLE WIDTH="100%" BGCOLOR="#E0E0E0"><TR><TD>
+<TT>
+define('FPDF_FONTPATH','/home/www/font/');<BR>
+require('fpdf.php');
+</TT>
+</TD></TR></TABLE><BR>
+Daca fisierul corespunzator nu este gasit, eroare "Could not include font metric file" este generata.
+<H4 CLASS='st'>Parametrii</H4>
+<TT><U>family</U></TT>
+<BLOCKQUOTE>
+Familia fontului. Poate fi fie un nume definit cu AddFont() sau o familie standard:
+<UL>
+<LI><TT>Courier</TT> (latime fixa)
+<LI><TT>Helvetica<TT> sau </TT>Arial</TT> (sinonim; sans serif)
+<LI><TT>Times</TT> (serif)
+<LI><TT>Symbol</TT> (simbolic)
+<LI><TT>ZapfDingbats</TT> (simbolic)
+</UL>
+Este posibila pasarea unui sir gol, caz in care familia curenta este retinuta.
+</BLOCKQUOTE>
+<TT><U>style</U></TT>
+<BLOCKQUOTE>
+Stilul fontului. Valori posibile:
+<UL>
+<LI>empty string: regular (implicit)
+<LI><TT>B</TT>: bold
+<LI><TT>I</TT>: italic
+<LI><TT>U</TT>: subliniat
+</UL>
+sau orice combinatie.
+Bold si italic nu se aplica la <TT>Symbol</TT> si <TT>ZapfDingbats</TT>.
+</BLOCKQUOTE>
+<TT><U>size</U></TT>
+<BLOCKQUOTE>
+Marimea fontului in puncte.
+<BR>
+Valoare implicita este marimea curenta. Daca nici o marime nu a fost specificata de la ineputul
+documentului, valoarea este 12.
+</BLOCKQUOTE>
+<H4 CLASS='st'>Exemplu</H4>
+<TABLE WIDTH="100%" BGCOLOR="#E0E0E0"><TR><TD>
+<TT>
+//Times regular 12<BR>
+$pdf-&gt;SetFont('Times');<BR>
+//Arial bold 14<BR>
+$pdf-&gt;SetFont('Arial','B',14);<BR>
+//Removes bold<BR>
+$pdf-&gt;SetFont('');<BR>
+//Times bold, italic and underlined 14<BR>
+$pdf-&gt;SetFont('Times','BIU');
+</TT>
+</TD></TR></TABLE><BR>
+<H4 CLASS='st'>Vezi</H4>
+<A HREF="addfont.htm">AddFont()</A>,
+<A HREF="setfontsize.htm">SetFontSize()</A>,
+<A HREF="cell.htm">Cell()</A>,
+<A HREF="multicell.htm">MultiCell()</A>,
+<A HREF="write.htm">Write()</A>.
+<H6></H6>
+<HR>
+<DIV ALIGN="CENTER"><A HREF="index.htm">Index</A></DIV>
+</BODY>
+</HTML>
